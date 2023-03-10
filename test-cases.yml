@@ -214,16 +214,10 @@ requirement: |
 prerequisites: |
   Открыта страница магазина https://hexlet-products-store.vercel.app/
 test-data: |
-   Browser = google chrome Версия 110.0.5481.180 (Официальная сборка), (64 бит)
+   Browser = Chrome Version 111.0.5563.65 (Official Build) (64-bit)
 steps:
   - Войти в "Dev Tools"
   - Нажимаем кнопку Toggle device toolbar
-  - Нажимаем кнопку "Cart"
-  - Нажимаем кнопку "Store"
-  - Нажимаем кнопку "Language" "Russian"
-  - Выбрать категорию "laptops"
-  - Нажимаем на товар "MacBook Pro"
+  - Выбрать нужную модель устройства
 expected-result: |
   Корректно отображается мобильная версия сайта
-    
-  
