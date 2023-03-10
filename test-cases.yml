@@ -232,3 +232,17 @@ steps:
   - Открыть https://hexlet-products-store.vercel.app/
 expected-result: |
   Корректно отображается сайт в браузере Opera GX
+
+- summary: |
+  Проверка Мультиязычности сайта
+requirement: |
+  При смене языка меняется перевод ключевых элементов интерфеса сайта
+prerequisites: |
+  Открыта страница магазина https://hexlet-products-store.vercel.app/
+test-data: |
+  empty
+steps:
+  - нажать "Language" в шапке сайта
+  - Из выпадающего списка выбрать "Russian"
+expected-result: |
+  Элементы интерфейса сайта, описание в карточках товаров отображаются корректно на русском языке
