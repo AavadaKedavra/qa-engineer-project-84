@@ -73,9 +73,9 @@ bugreports:
       Перестает работать функция поиск по ключевому слову
   environment: |
       Opera GX LVL 4 (core: 95.0.4635.74)
-      ОС Windows 22H2 (22621.1265
+      ОС Windows 22H2 (22621.1265)
   steps-to-reproduce: |
-      1. Зайти на главную страницу страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      1. Зайти на главную страницу страницу магазина: https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       2. В строке Search ввести "Any Phone"
   expected-result: |
       На сайте отоброжается сообщение "Nothing found!" 
@@ -86,9 +86,9 @@ bugreports:
       Некорректно работает функция сортировка товара по ценовому диапазону 
   environment: |
       Opera GX LVL 4 (core: 95.0.4635.74)
-      ОС Windows 22H2 (22621.1265
+      ОС Windows 22H2 (22621.1265)
   steps-to-reproduce: |
-      1. Зайти на главную страницу страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      1. Зайти на главную страницу страницу магазина: https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       2. В поле From ввсети 70, в поле To ввести 100
   expected-result: |
       На сайте отображаются все товары относящиеся к заданным параметрам 
@@ -100,9 +100,9 @@ bugreports:
       Некорректно работает сортировка товаров по статусу "в наличии/отсутсвующие"   
   environment: |
       Opera GX LVL 4 (core: 95.0.4635.74)
-      ОС Windows 22H2 (22621.1265
+      ОС Windows 22H2 (22621.1265)
   steps-to-reproduce: |
-      1. Зайти на главную страницу страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      1. Зайти на главную страницу страницу магазина: https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       2. Снять флажок In Stock
   expected-result: |
       На сайте отображаются все товары в том числе и отсутствующие 
@@ -113,9 +113,9 @@ bugreports:
       Некорректно отображается карточка товара "в наличии/отсутсвующие"   
   environment: |
       Opera GX LVL 4 (core: 95.0.4635.74)
-      ОС Windows 22H2 (22621.1265
+      ОС Windows 22H2 (22621.1265)
   steps-to-reproduce: |
-      1. Зайти на главную страницу страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      1. Зайти на главную страницу страницу магазина: https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       2. В строке Search ввести "OPPO"
   expected-result: |
       Сайт дает корректное отоброжение карточки товара "OPPO" 
