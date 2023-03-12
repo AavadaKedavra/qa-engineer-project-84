@@ -1,0 +1,123 @@
+---
+test-cases:
+  - summary: |
+      Проверка поиска товара по ключевому слову
+  status: fail
+
+  - summary: |
+      Проверка фильтрации каталога товаров по категории
+  status: pass
+
+  - summary: |
+      Проверка фильтрации товара по ценовому диапозону
+  status: fail
+
+  - summary: |
+      Проверка фильтрации по бренду
+  status: pass
+
+  - summary: |
+      Проверка фильтрации по нескольким брендам
+  status: pass
+
+  - summary: |
+      Проверка фильтрации поиска товаров по цвету
+  status: fail
+
+  - summary: |
+      Проверка фильтрации товарова по размеру
+  status: fail
+
+  - summary: |
+      Проверка отображения карточки товара
+  status: fail
+
+  - summary: |
+      Проверка добавления товаров в корзину 
+  status: pass
+
+  - summary: |
+      Проверка выбора товара определенного цвета 
+  status: fail
+
+  - summary: |
+      Проверка успешного оформления заказа 
+  status: pass
+
+  - summary: |
+      Проверка отчистки определенного товара из корзины 
+  status: pass
+
+  - summary: |
+      Проверка отчистки всего списка корзины
+  status: pass
+
+  - summary: |
+      Проверка возврата из корзины в меню магазина
+  status: pass
+
+  - summary: |
+      Проверка входа с мобильного устройства
+  status: fail
+
+  - summary: |
+      Проверка входа с браузера Opera GX
+  status: pass
+
+  - summary: |
+      Проверка Мультиязычности сайта
+  status: fail
+
+bugreports:
+  - summary: |
+      Перестает работать функция поиск по ключевому слову
+  environment: |
+      Opera GX LVL 4 (core: 95.0.4635.74)
+      ОС Windows 22H2 (22621.1265
+  steps-to-reproduce: |
+      1. Зайти на главную страницу страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. В строке Search ввести "Any Phone"
+  expected-result: |
+      На сайте отоброжается сообщение "Nothing found!" 
+  actual-result: |
+      Сайт отображает все товары
+      
+  - summary: |
+      Некорректно работает функция сортировка товара по ценовому диапазону 
+  environment: |
+      Opera GX LVL 4 (core: 95.0.4635.74)
+      ОС Windows 22H2 (22621.1265
+  steps-to-reproduce: |
+      1. Зайти на главную страницу страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. В поле From ввсети 70, в поле To ввести 100
+  expected-result: |
+      На сайте отображаются все товары относящиеся к заданным параметрам 
+      На сайте отоброжается сообщение "Nothing found!" в случае, если ни один товар не отвечает заданным параметрам
+  actual-result: |
+      Сайт отображает все товары 
+      
+  - summary: |
+      Некорректно работает сортировка товаров по статусу "в наличии/отсутсвующие"   
+  environment: |
+      Opera GX LVL 4 (core: 95.0.4635.74)
+      ОС Windows 22H2 (22621.1265
+  steps-to-reproduce: |
+      1. Зайти на главную страницу страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. Снять флажок In Stock
+  expected-result: |
+      На сайте отображаются все товары в том числе и отсутствующие 
+  actual-result: |
+      Сайт товары с первой страницы 
+      
+  - summary: |
+      Некорректно отображается карточка товара "в наличии/отсутсвующие"   
+  environment: |
+      Opera GX LVL 4 (core: 95.0.4635.74)
+      ОС Windows 22H2 (22621.1265
+  steps-to-reproduce: |
+      1. Зайти на главную страницу страницу магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. В строке Search ввести "OPPO"
+  expected-result: |
+      Сайт дает корректное отоброжение карточки товара "OPPO" 
+  actual-result: |
+      Элементы карточки товара "OPPO" выходят за поля, карточка "сжимается"    
