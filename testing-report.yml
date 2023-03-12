@@ -65,4 +65,4 @@ status: pass
 
 - summary: |
   Проверка Мультиязычности сайта
-status: pass
+status: fail
